@@ -13,8 +13,8 @@ cy.visit("https://gallery-app.vivifyideas.com");
         cy.get('input[id="email"]').type('zoran1234cypress.test@gmail.com');
         cy.get('input[id="password"]').type('cypress1234');
         cy.get('input[id="password-confirmation"]').type('cypress1234');
-        cy.get('.form-check-input').click();
-        cy.get('button[type="submit"]').click();
+        cy.get('.form-check-input').click();        //cy.get('input[type="checkbox"]').click();
+        cy.get('button[type="submit"]').click();       
     }); 
 
     it('Negative case - Registration with password-confirmation field empty', () => {
